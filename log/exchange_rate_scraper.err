@@ -1,0 +1,849 @@
+2024-12-24 17:31:50,678 - INFO - MainThread - ==========================
+2024-12-24 17:31:50,678 - INFO - MainThread - Program start - Exchange Rate Scraper
+2024-12-24 17:31:50,678 - INFO - MainThread - ==========================
+2024-12-24 17:31:50,678 - INFO - cbaThread - Started scraping cba
+2024-12-24 17:31:50,678 - INFO - anzThread - Started scraping anz
+2024-12-24 17:31:50,678 - INFO - wiseThread - Started scraping wise
+2024-12-24 17:31:50,678 - INFO - webtradepayThread - Started scraping webtradepay
+2024-12-24 17:31:50,679 - INFO - pandaremitThread - Started scraping pandaremit
+2024-12-24 17:31:50,684 - DEBUG - wiseThread - Started executable: `chrome/chromedriver-mac-arm64/chromedriver` in a child process with pid: 96932 using 0 to output -3
+2024-12-24 17:31:50,684 - INFO - moneychaseThread - Started scraping moneychase
+2024-12-24 17:31:50,684 - DEBUG - cbaThread - Started executable: `chrome/chromedriver-mac-arm64/chromedriver` in a child process with pid: 96931 using 0 to output -3
+2024-12-24 17:31:50,684 - DEBUG - anzThread - Started executable: `chrome/chromedriver-mac-arm64/chromedriver` in a child process with pid: 96933 using 0 to output -3
+2024-12-24 17:31:50,685 - INFO - moneychainThread - Started scraping moneychain
+2024-12-24 17:31:50,686 - DEBUG - webtradepayThread - Started executable: `chrome/chromedriver-mac-arm64/chromedriver` in a child process with pid: 96934 using 0 to output -3
+2024-12-24 17:31:50,690 - DEBUG - pandaremitThread - Started executable: `chrome/chromedriver-mac-arm64/chromedriver` in a child process with pid: 96935 using 0 to output -3
+2024-12-24 17:31:50,695 - DEBUG - moneychaseThread - Started executable: `chrome/chromedriver-mac-arm64/chromedriver` in a child process with pid: 96937 using 0 to output -3
+2024-12-24 17:31:50,695 - DEBUG - moneychainThread - Started executable: `chrome/chromedriver-mac-arm64/chromedriver` in a child process with pid: 96936 using 0 to output -3
+2024-12-24 17:31:50,700 - DEBUG - wiseThread - POST http://localhost:63957/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': ['--blink-settings=imagesEnabled=false', '--headless', '--no-sandbox']}}}}
+2024-12-24 17:31:50,700 - DEBUG - pandaremitThread - POST http://localhost:63959/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': ['--blink-settings=imagesEnabled=false', '--headless', '--no-sandbox']}}}}
+2024-12-24 17:31:50,700 - DEBUG - webtradepayThread - POST http://localhost:63958/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': ['--blink-settings=imagesEnabled=false', '--headless', '--no-sandbox']}}}}
+2024-12-24 17:31:50,701 - DEBUG - wiseThread - Starting new HTTP connection (1): localhost:63957
+2024-12-24 17:31:50,701 - DEBUG - cbaThread - POST http://localhost:63955/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': ['--blink-settings=imagesEnabled=false', '--headless', '--no-sandbox']}}}}
+2024-12-24 17:31:50,701 - DEBUG - anzThread - POST http://localhost:63956/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': ['--blink-settings=imagesEnabled=false', '--headless', '--no-sandbox']}}}}
+2024-12-24 17:31:50,701 - DEBUG - moneychainThread - POST http://localhost:63961/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': ['--blink-settings=imagesEnabled=false', '--headless', '--no-sandbox']}}}}
+2024-12-24 17:31:50,701 - DEBUG - pandaremitThread - Starting new HTTP connection (1): localhost:63959
+2024-12-24 17:31:50,701 - DEBUG - webtradepayThread - Starting new HTTP connection (1): localhost:63958
+2024-12-24 17:31:50,701 - DEBUG - cbaThread - Starting new HTTP connection (1): localhost:63955
+2024-12-24 17:31:50,702 - DEBUG - anzThread - Starting new HTTP connection (1): localhost:63956
+2024-12-24 17:31:50,702 - DEBUG - moneychainThread - Starting new HTTP connection (1): localhost:63961
+2024-12-24 17:31:50,714 - DEBUG - moneychaseThread - POST http://localhost:63960/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': ['--blink-settings=imagesEnabled=false', '--headless', '--no-sandbox']}}}}
+2024-12-24 17:31:50,715 - DEBUG - moneychaseThread - Starting new HTTP connection (1): localhost:63960
+2024-12-24 17:31:52,043 - DEBUG - moneychainThread - http://localhost:63961 "POST /session HTTP/1.1" 200 0
+2024-12-24 17:31:52,058 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.205","chrome":{"chromedriverVersion":"131.0.6778.108 (3b014839fbc4fb688b2f5af512d6ce312ad208b1-refs/branch-heads/6778@{#2393})","userDataDir":"/var/folders/gp/gc_zqdxs3rv99ks8tfjfwp280000gp/T/.org.chromium.Chromium.dj5wJF"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:63985"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"553cb975030f7da36e0c737c4d27b79b"}} | headers=HTTPHeaderDict({'Content-Length': '892', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,063 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:52,075 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/timeouts {'implicit': 10000}
+2024-12-24 17:31:52,079 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/timeouts HTTP/1.1" 200 0
+2024-12-24 17:31:52,086 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,092 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:52,097 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/url {'url': 'https://www.moneychain.com.au/'}
+2024-12-24 17:31:52,191 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session HTTP/1.1" 200 0
+2024-12-24 17:31:52,203 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.205","chrome":{"chromedriverVersion":"131.0.6778.108 (3b014839fbc4fb688b2f5af512d6ce312ad208b1-refs/branch-heads/6778@{#2393})","userDataDir":"/var/folders/gp/gc_zqdxs3rv99ks8tfjfwp280000gp/T/.org.chromium.Chromium.nsYruW"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:63979"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"20d3d41ae238f9a07c35d66d7104e2c9"}} | headers=HTTPHeaderDict({'Content-Length': '892', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,197 - DEBUG - cbaThread - http://localhost:63955 "POST /session HTTP/1.1" 200 0
+2024-12-24 17:31:52,201 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session HTTP/1.1" 200 0
+2024-12-24 17:31:52,234 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.205","chrome":{"chromedriverVersion":"131.0.6778.108 (3b014839fbc4fb688b2f5af512d6ce312ad208b1-refs/branch-heads/6778@{#2393})","userDataDir":"/var/folders/gp/gc_zqdxs3rv99ks8tfjfwp280000gp/T/.org.chromium.Chromium.ANgYtd"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:63978"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"2e007b7fd04d0ae245804ede48be64ee"}} | headers=HTTPHeaderDict({'Content-Length': '892', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,249 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:52,208 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:52,222 - DEBUG - cbaThread - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.205","chrome":{"chromedriverVersion":"131.0.6778.108 (3b014839fbc4fb688b2f5af512d6ce312ad208b1-refs/branch-heads/6778@{#2393})","userDataDir":"/var/folders/gp/gc_zqdxs3rv99ks8tfjfwp280000gp/T/.org.chromium.Chromium.05mcnI"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:63981"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"1418685bb450a3b54f1d5fa8ec1d2c7f"}} | headers=HTTPHeaderDict({'Content-Length': '892', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,309 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:52,318 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/timeouts {'implicit': 10000}
+2024-12-24 17:31:52,269 - DEBUG - anzThread - http://localhost:63956 "POST /session HTTP/1.1" 200 0
+2024-12-24 17:31:52,330 - DEBUG - anzThread - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.205","chrome":{"chromedriverVersion":"131.0.6778.108 (3b014839fbc4fb688b2f5af512d6ce312ad208b1-refs/branch-heads/6778@{#2393})","userDataDir":"/var/folders/gp/gc_zqdxs3rv99ks8tfjfwp280000gp/T/.org.chromium.Chromium.LY9uCv"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:63988"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"71bfa24f61bc53223342fb5fd09d9497"}} | headers=HTTPHeaderDict({'Content-Length': '892', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,300 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/timeouts {'implicit': 10000}
+2024-12-24 17:31:52,197 - DEBUG - wiseThread - http://localhost:63957 "POST /session HTTP/1.1" 200 0
+2024-12-24 17:31:52,205 - DEBUG - webtradepayThread - http://localhost:63958 "POST /session HTTP/1.1" 200 0
+2024-12-24 17:31:52,359 - DEBUG - webtradepayThread - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.205","chrome":{"chromedriverVersion":"131.0.6778.108 (3b014839fbc4fb688b2f5af512d6ce312ad208b1-refs/branch-heads/6778@{#2393})","userDataDir":"/var/folders/gp/gc_zqdxs3rv99ks8tfjfwp280000gp/T/.org.chromium.Chromium.0lwDKv"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:63983"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"76078c682b458509db686939d3b91f01"}} | headers=HTTPHeaderDict({'Content-Length': '892', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,364 - DEBUG - webtradepayThread - Finished Request
+2024-12-24 17:31:52,334 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:52,344 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/timeouts HTTP/1.1" 200 0
+2024-12-24 17:31:52,376 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,325 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/timeouts HTTP/1.1" 200 0
+2024-12-24 17:31:52,294 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/timeouts {'implicit': 10000}
+2024-12-24 17:31:52,370 - DEBUG - webtradepayThread - POST http://localhost:63958/session/76078c682b458509db686939d3b91f01/timeouts {'implicit': 10000}
+2024-12-24 17:31:52,374 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/timeouts {'implicit': 10000}
+2024-12-24 17:31:52,346 - DEBUG - wiseThread - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.205","chrome":{"chromedriverVersion":"131.0.6778.108 (3b014839fbc4fb688b2f5af512d6ce312ad208b1-refs/branch-heads/6778@{#2393})","userDataDir":"/var/folders/gp/gc_zqdxs3rv99ks8tfjfwp280000gp/T/.org.chromium.Chromium.gZ7Gix"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:63980"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"d6efc5b7ee6a3fedb46252aa8663ba0c"}} | headers=HTTPHeaderDict({'Content-Length': '892', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,383 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:52,386 - DEBUG - cbaThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,392 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/timeouts HTTP/1.1" 200 0
+2024-12-24 17:31:52,413 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,413 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:52,403 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:31:52,404 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/url {'url': 'https://www.moneychase.com.au/'}
+2024-12-24 17:31:52,411 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:52,424 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/url {'url': 'https://www.commbank.com.au/international/foreign-exchange-rates.html'}
+2024-12-24 17:31:52,394 - DEBUG - webtradepayThread - http://localhost:63958 "POST /session/76078c682b458509db686939d3b91f01/timeouts HTTP/1.1" 200 0
+2024-12-24 17:31:52,425 - DEBUG - webtradepayThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,400 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/timeouts HTTP/1.1" 200 0
+2024-12-24 17:31:52,413 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/url {'url': 'https://prod.pandaremit.com/pricing/rate/AUD/JPY'}
+2024-12-24 17:31:52,425 - DEBUG - webtradepayThread - Finished Request
+2024-12-24 17:31:52,428 - DEBUG - webtradepayThread - POST http://localhost:63958/session/76078c682b458509db686939d3b91f01/url {'url': 'https://r.superforex.com.au/rates_cron.json'}
+2024-12-24 17:31:52,426 - DEBUG - anzThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,429 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:52,421 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/timeouts {'implicit': 10000}
+2024-12-24 17:31:52,431 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/url {'url': 'https://www.anz.com.au/personal/travel-international/foreign-exchange-rates/'}
+2024-12-24 17:31:52,432 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/timeouts HTTP/1.1" 200 0
+2024-12-24 17:31:52,432 - DEBUG - wiseThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,433 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:31:52,433 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/url {'url': 'https://wise.com/au/compare/western-union-aud-to-JPY'}
+2024-12-24 17:31:52,523 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/url HTTP/1.1" 200 0
+2024-12-24 17:31:52,523 - DEBUG - anzThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,523 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:52,523 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/element {'using': 'xpath', 'value': '//div[@aria-labelledby="tab-1"]//td[@data-code="JPY"]/following-sibling::td[1]'}
+2024-12-24 17:31:52,655 - DEBUG - webtradepayThread - http://localhost:63958 "POST /session/76078c682b458509db686939d3b91f01/url HTTP/1.1" 200 0
+2024-12-24 17:31:52,658 - DEBUG - webtradepayThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,660 - DEBUG - webtradepayThread - Finished Request
+2024-12-24 17:31:52,662 - DEBUG - webtradepayThread - POST http://localhost:63958/session/76078c682b458509db686939d3b91f01/element {'using': 'tag name', 'value': 'pre'}
+2024-12-24 17:31:52,669 - DEBUG - webtradepayThread - http://localhost:63958 "POST /session/76078c682b458509db686939d3b91f01/element HTTP/1.1" 200 0
+2024-12-24 17:31:52,669 - DEBUG - webtradepayThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.5674FCEB91A2B8DBF1FB0744196703CE.d.9369D8E2225239412E404286044C59FD.e.4"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,670 - DEBUG - webtradepayThread - Finished Request
+2024-12-24 17:31:52,670 - DEBUG - webtradepayThread - POST http://localhost:63958/session/76078c682b458509db686939d3b91f01/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.5674FCEB91A2B8DBF1FB0744196703CE.d.9369D8E2225239412E404286044C59FD.e.4'}, 'innerText']}
+2024-12-24 17:31:52,674 - DEBUG - webtradepayThread - http://localhost:63958 "POST /session/76078c682b458509db686939d3b91f01/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:52,674 - DEBUG - webtradepayThread - Remote response: status=200 | data={"value":"{\"totalcount\":22,\"0\":{\"name\":\"AUDIDR\",\"buy\":\"9550.0000\",\"sell\":\"12000.0000\",\"kbuy\":\"9550.0000\",\"ksell\":\"11750.0000\"},\"AUDIDR\":{\"name\":\"AUDIDR\",\"buy\":\"9550.0000\",\"sell\":\"12000.0000\",\"kbuy\":\"9550.0000\",\"ksell\":\"11750.0000\"},\"1\":{\"name\":\"AUDJPY\",\"buy\":\"92.9429\",\"sell\":\"100.9538\",\"kbuy\":\"96.9429\",\"ksell\":\"98.6538\"},\"AUDJPY\":{\"name\":\"AUDJPY\",\"buy\":\"92.9429\",\"sell\":\"100.9538\",\"kbuy\":\"96.9429\",\"ksell\":\"98.6538\"},\"2\":{\"name\":\"AUDRMB\",\"buy\":\"4.3665\",\"sell\":\"4.9104\",\"kbuy\":\"4.5565\",\"ksell\":\"4.7304\"},\"AUDRMB\":{\"name\":\"AUDRMB\",\"buy\":\"4.3665\",\"sell\":\"4.9104\",\"kbuy\":\"4.5565\",\"ksell\":\"4.7304\"},\"3\":{\"name\":\"AUDPHP\",\"buy\":\"33.9500\",\"sell\":\"40.0500\",\"kbuy\":\"33.9500\",\"ksell\":\"40.0500\"},\"AUDPHP\":{\"name\":\"AUDPHP\",\"buy\":\"33.9500\",\"sell\":\"40.0500\",\"kbuy\":\"33.9500\",\"ksell\":\"40.0500\"},\"4\":{\"name\":\"NZDRMB\",\"buy\":\"3.8327\",\"sell\":\"4.5129\",\"kbuy\":\"4.1027\",\"ksell\":\"4.3629\"},\"NZDRMB\":{\"name\":\"NZDRMB\",\"buy\":\"3.8327\",\"sell\":\"4.5129\",\"kbuy\":\"4.1027\",\"ksell\":\"4.3629\"},\"5\":{\"name\":\"AUDSGD\",\"buy\":\"0.7978\",\"sell\":\"0.8780\",\"kbuy\":\"0.8418\",\"ksell\":\"0.8540\"},\"AUDSGD\":{\"name\":\"AUDSGD\",\"buy\":\"0.7978\",\"sell\":\"0.8780\",\"kbuy\":\"0.8418\",\"ksell\":\"0.8540\"},\"6\":{\"name\":\"AUDGBP\",\"buy\":\"0.4577\",\"sell\":\"0.5178\",\"kbuy\":\"0.4917\",\"ksell\":\"0.5038\"},\"AUDGBP\":{\"name\":\"AUDGBP\",\"buy\":\"0.4577\",\"sell\":\"0.5178\",\"kbuy\":\"0.4917\",\"ksell\":\"0.5038\"},\"7\":{\"name\":\"AUDVND\",\"buy\":\"14894.9500\",\"sell\":\"17445.0500\",\"kbuy\":\"14894.9500\",\"ksell\":\"17445.0500\"},\"AUDVND\":{\"name\":\"AUDVND\",\"buy\":\"14894.9500\",\"sell\":\"17445.0500\",\"kbuy\":\"14894.9500\",\"ksell\":\"17445.0500\"},\"8\":{\"name\":\"AUDNZD\",\"buy\":\"1.0649\",\"sell\":\"1.1450\",\"kbuy\":\"1.0969\",\"ksell\":\"1.1130\"},\"AUDNZD\":{\"name\":\"AUDNZD\",\"buy\":\"1.0649\",\"sell\":\"1.1450\",\"kbuy\":\"1.0969\",\"ksell\":\"1.1130\"},\"9\":{\"name\":\"USDRMB\",\"buy\":\"7.2000\",\"sell\":\"7.6800\",\"kbuy\":\"7.2400\",\"ksell\":\"7.6300\"},\"USDRMB\":{\"name\":\"USDRMB\",\"buy\":\"7.2000\",\"sell\":\"7.6800\",\"kbuy\":\"7.2400\",\"ksell\":\"7.6300\"},\"10\":{\"name\":\"AUDAED\",\"buy\":\"2.2100\",\"sell\":\"2.5900\",\"kbuy\":\"2.2100\",\"ksell\":\"2.5900\"},\"AUDAED\":{\"name\":\"AUDAED\",\"buy\":\"2.2100\",\"sell\":\"2.5900\",\"kbuy\":\"2.2100\",\"ksell\":\"2.5900\"},\"11\":{\"name\":\"AUDFJD\",\"buy\":\"1.3300\",\"sell\":\"1.6700\",\"kbuy\":\"1.3300\",\"ksell\":\"1.6700\"},\"AUDFJD\":{\"name\":\"AUDFJD\",\"buy\":\"1.3300\",\"sell\":\"1.6700\",\"kbuy\":\"1.3300\",\"ksell\":\"1.6700\"},\"12\":{\"name\":\"AUDKRW\",\"buy\":\"830.0000\",\"sell\":\"950.0000\",\"kbuy\":\"830.0000\",\"ksell\":\"950.0000\"},\"AUDKRW\":{\"name\":\"AUDKRW\",\"buy\":\"830.0000\",\"sell\":\"950.0000\",\"kbuy\":\"830.0000\",\"ksell\":\"950.0000\"},\"13\":{\"name\":\"AUDEUR\",\"buy\":\"0.5751\",\"sell\":\"0.6202\",\"kbuy\":\"0.5941\",\"ksell\":\"0.6102\"},\"AUDEUR\":{\"name\":\"AUDEUR\",\"buy\":\"0.5751\",\"sell\":\"0.6202\",\"kbuy\":\"0.5941\",\"ksell\":\"0.6102\"},\"14\":{\"name\":\"AUDCAD\",\"buy\":\"0.8574\",\"sell\":\"0.9225\",\"kbuy\":\"0.8874\",\"ksell\":\"0.9035\"},\"AUDCAD\":{\"name\":\"AUDCAD\",\"buy\":\"0.8574\",\"sell\":\"0.9225\",\"kbuy\":\"0.8874\",\"ksell\":\"0.9035\"},\"15\":{\"name\":\"AUDMYR\",\"buy\":\"2.5692\",\"sell\":\"3.0025\",\"kbuy\":\"2.6992\",\"ksell\":\"2.9025\"},\"AUDMYR\":{\"name\":\"AUDMYR\",\"buy\":\"2.5692\",\"sell\":\"3.0025\",\"kbuy\":\"2.6992\",\"ksell\":\"2.9025\"},\"16\":{\"name\":\"AUDHKD\",\"buy\":\"4.5958\",\"sell\":\"5.0466\",\"kbuy\":\"4.7258\",\"ksell\":\"4.8866\"},\"AUDHKD\":{\"name\":\"AUDHKD\",\"buy\":\"4.5958\",\"sell\":\"5.0466\",\"kbuy\":\"4.7258\",\"ksell\":\"4.8866\"},\"17\":{\"name\":\"AUDTWD\",\"buy\":\"17.8983\",\"sell\":\"22.4037\",\"kbuy\":\"17.8983\",\"ksell\":\"22.4037\"},\"AUDTWD\":{\"name\":\"AUDTWD\",\"buy\":\"17.8983\",\"sell\":\"22.4037\",\"kbuy\":\"17.8983\",\"ksell\":\"22.4037\"},\"18\":{\"name\":\"AUDZAR\",\"buy\":\"10.3000\",\"sell\":\"13.2000\",\"kbuy\":\"10.3000\",\"ksell\":\"13.2000\"},\"AUDZAR\":{\"name\":\"AUDZAR\",\"buy\":\"10.3000\",\"sell\":\"13.2000\",\"kbuy\":\"10.3000\",\"ksell\":\"13.2000\"},\"19\":{\"name\":\"AUDUSD\",\"buy\":\"0.6088\",\"sell\":\"0.6539\",\"kbuy\":\"0.6158\",\"ksell\":\"0.6319\"},\"AUDUSD\":{\"name\":\"AUDUSD\",\"buy\":\"0.6088\",\"sell\":\"0.6539\",\"kbuy\":\"0.6158\",\"ksell\":\"0.6319\"},\"20\":{\"name\":\"NZDUSD\",\"buy\":\"0.5346\",\"sell\":\"0.5846\",\"kbuy\":\"0.5616\",\"ksell\":\"0.5676\"},\"NZDUSD\":{\"name\":\"NZDUSD\",\"buy\":\"0.5346\",\"sell\":\"0.5846\",\"kbuy\":\"0.5616\",\"ksell\":\"0.5676\"},\"21\":{\"name\":\"AUDTHB\",\"buy\":\"20.3400\",\"sell\":\"25.6600\",\"kbuy\":\"20.3400\",\"ksell\":\"25.6600\"},\"AUDTHB\":{\"name\":\"AUDTHB\",\"buy\":\"20.3400\",\"sell\":\"25.6600\",\"kbuy\":\"20.3400\",\"ksell\":\"25.6600\"},\"status\":[\"ok\"]}"} | headers=HTTPHeaderDict({'Content-Length': '5043', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,674 - DEBUG - webtradepayThread - Finished Request
+2024-12-24 17:31:52,674 - INFO - webtradepayThread - Captured JPY_buy: 96.9429
+2024-12-24 17:31:52,674 - INFO - webtradepayThread - Captured JPY_sell: 98.6538
+2024-12-24 17:31:52,674 - INFO - webtradepayThread - Captured USD_buy: 0.6158
+2024-12-24 17:31:52,674 - INFO - webtradepayThread - Captured USD_sell: 0.6319
+2024-12-24 17:31:52,674 - INFO - webtradepayThread - Captured CNY_buy: 4.5565
+2024-12-24 17:31:52,674 - INFO - webtradepayThread - Captured CNY_sell: 4.7304
+2024-12-24 17:31:52,674 - INFO - webtradepayThread - Captured SGD_buy: 0.8418
+2024-12-24 17:31:52,674 - INFO - webtradepayThread - Captured SGD_sell: 0.8540
+2024-12-24 17:31:52,674 - INFO - webtradepayThread - Captured HKD_buy: 4.7258
+2024-12-24 17:31:52,674 - INFO - webtradepayThread - Captured HKD_sell: 4.8866
+2024-12-24 17:31:52,674 - INFO - webtradepayThread - Captured EUR_buy: 0.5941
+2024-12-24 17:31:52,674 - INFO - webtradepayThread - Captured EUR_sell: 0.6102
+2024-12-24 17:31:52,674 - INFO - webtradepayThread - Captured GBP_buy: 0.4917
+2024-12-24 17:31:52,674 - INFO - webtradepayThread - Captured GBP_sell: 0.5038
+2024-12-24 17:31:52,675 - DEBUG - webtradepayThread - DELETE http://localhost:63958/session/76078c682b458509db686939d3b91f01 {}
+2024-12-24 17:31:52,728 - DEBUG - webtradepayThread - http://localhost:63958 "DELETE /session/76078c682b458509db686939d3b91f01 HTTP/1.1" 200 0
+2024-12-24 17:31:52,728 - DEBUG - webtradepayThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,728 - DEBUG - webtradepayThread - Finished Request
+2024-12-24 17:31:52,971 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/url HTTP/1.1" 200 0
+2024-12-24 17:31:52,971 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,971 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:52,971 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/element {'using': 'tag name', 'value': 'pre'}
+2024-12-24 17:31:52,981 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/element HTTP/1.1" 200 0
+2024-12-24 17:31:52,983 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.EEE4E52ECF59190F31BAF954574DE7CE.d.24853455778A47C9D41F3446E04EAFF4.e.4"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,983 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:52,983 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.EEE4E52ECF59190F31BAF954574DE7CE.d.24853455778A47C9D41F3446E04EAFF4.e.4'}, 'innerText']}
+2024-12-24 17:31:52,989 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:52,989 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":"{\n  \"code\" : 0,\n  \"model\" : {\n    \"name\" : \"\",\n    \"target\" : \"JPY\",\n    \"code\" : \"AUD\",\n    \"huiIn\" : \"97.050400\",\n    \"huiOut\" : \"97.343200\",\n    \"zheSuan\" : \"97.587177\",\n    \"weight\" : 0,\n    \"pandaRate\" : \"97.343200\",\n    \"promoteThreshold\" : 0,\n    \"compareRate\" : \"+0.03%\"\n  },\n  \"suc\" : true\n}"} | headers=HTTPHeaderDict({'Content-Length': '369', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,989 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:52,989 - INFO - pandaremitThread - Captured AUD_to_JPY_midmarket: 97.343200
+2024-12-24 17:31:52,989 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/url {'url': 'https://prod.pandaremit.com/pricing/rate/AUD/USD'}
+2024-12-24 17:31:52,994 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/url HTTP/1.1" 200 0
+2024-12-24 17:31:52,994 - DEBUG - cbaThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:52,995 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:52,995 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/element {'using': 'xpath', 'value': '//div[@data-category="JPY"]//span[text()="Send IMT"]/following-sibling::div[1]'}
+2024-12-24 17:31:53,060 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,060 - DEBUG - cbaThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.4"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,060 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,060 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.4'}, 'innerText']}
+2024-12-24 17:31:53,063 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,063 - DEBUG - cbaThread - Remote response: status=200 | data={"value":"92.86"} | headers=HTTPHeaderDict({'Content-Length': '17', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,063 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,063 - INFO - cbaThread - Captured JPY_buy: 92.86
+2024-12-24 17:31:53,063 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/element {'using': 'xpath', 'value': '//div[@data-category="JPY"]//span[text()="Receive IMT"]/following-sibling::div[1]'}
+2024-12-24 17:31:53,068 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,068 - DEBUG - cbaThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.5"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,069 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,069 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.5'}, 'innerText']}
+2024-12-24 17:31:53,071 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,071 - DEBUG - cbaThread - Remote response: status=200 | data={"value":"102.49"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,071 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,071 - INFO - cbaThread - Captured JPY_sell: 102.49
+2024-12-24 17:31:53,071 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/element {'using': 'xpath', 'value': '//div[@data-category="USD"]//span[text()="Send IMT"]/following-sibling::div[1]'}
+2024-12-24 17:31:53,076 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,076 - DEBUG - cbaThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.6"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,076 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,076 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.6'}, 'innerText']}
+2024-12-24 17:31:53,078 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,078 - DEBUG - cbaThread - Remote response: status=200 | data={"value":"0.5984"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,078 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,078 - INFO - cbaThread - Captured USD_buy: 0.5984
+2024-12-24 17:31:53,078 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/element {'using': 'xpath', 'value': '//div[@data-category="USD"]//span[text()="Receive IMT"]/following-sibling::div[1]'}
+2024-12-24 17:31:53,083 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,083 - DEBUG - cbaThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.7"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,083 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,083 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.7'}, 'innerText']}
+2024-12-24 17:31:53,085 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,085 - DEBUG - cbaThread - Remote response: status=200 | data={"value":"0.6482"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,085 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,085 - INFO - cbaThread - Captured USD_sell: 0.6482
+2024-12-24 17:31:53,085 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/element {'using': 'xpath', 'value': '//div[@data-category="CNY"]//span[text()="Send IMT"]/following-sibling::div[1]'}
+2024-12-24 17:31:53,090 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,090 - DEBUG - cbaThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.8"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,090 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,090 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.8'}, 'innerText']}
+2024-12-24 17:31:53,092 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,092 - DEBUG - cbaThread - Remote response: status=200 | data={"value":"-"} | headers=HTTPHeaderDict({'Content-Length': '13', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,092 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,092 - INFO - cbaThread - Captured CNY_buy: -
+2024-12-24 17:31:53,092 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/element {'using': 'xpath', 'value': '//div[@data-category="CNY"]//span[text()="Receive IMT"]/following-sibling::div[1]'}
+2024-12-24 17:31:53,097 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,097 - DEBUG - cbaThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.9"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,097 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,097 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.9'}, 'innerText']}
+2024-12-24 17:31:53,099 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,099 - DEBUG - cbaThread - Remote response: status=200 | data={"value":"-"} | headers=HTTPHeaderDict({'Content-Length': '13', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,099 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,099 - INFO - cbaThread - Captured CNY_sell: -
+2024-12-24 17:31:53,099 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/element {'using': 'xpath', 'value': '//div[@data-category="SGD"]//span[text()="Send IMT"]/following-sibling::div[1]'}
+2024-12-24 17:31:53,105 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,105 - DEBUG - cbaThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.10"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,105 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,105 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.10'}, 'innerText']}
+2024-12-24 17:31:53,108 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,108 - DEBUG - cbaThread - Remote response: status=200 | data={"value":"0.8103"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,109 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,109 - INFO - cbaThread - Captured SGD_buy: 0.8103
+2024-12-24 17:31:53,109 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/element {'using': 'xpath', 'value': '//div[@data-category="SGD"]//span[text()="Receive IMT"]/following-sibling::div[1]'}
+2024-12-24 17:31:53,109 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/url HTTP/1.1" 200 0
+2024-12-24 17:31:53,110 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,110 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:53,110 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/element {'using': 'tag name', 'value': 'pre'}
+2024-12-24 17:31:53,113 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,113 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.EEE4E52ECF59190F31BAF954574DE7CE.d.03543CDE5D7DC32E67373F48B8259762.e.9"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,113 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:53,114 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.EEE4E52ECF59190F31BAF954574DE7CE.d.03543CDE5D7DC32E67373F48B8259762.e.9'}, 'innerText']}
+2024-12-24 17:31:53,115 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,115 - DEBUG - cbaThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.11"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,115 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,115 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.11'}, 'innerText']}
+2024-12-24 17:31:53,116 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,116 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":"{\n  \"code\" : 0,\n  \"model\" : {\n    \"name\" : \"\",\n    \"target\" : \"USD\",\n    \"code\" : \"AUD\",\n    \"huiIn\" : \"0.620200\",\n    \"huiOut\" : \"0.621500\",\n    \"zheSuan\" : \"0.623998\",\n    \"weight\" : 0,\n    \"pandaRate\" : \"0.621500\",\n    \"promoteThreshold\" : 0,\n    \"compareRate\" : \"+0.26%\"\n  },\n  \"suc\" : true\n}"} | headers=HTTPHeaderDict({'Content-Length': '365', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,116 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:53,116 - INFO - pandaremitThread - Captured AUD_to_USD_midmarket: 0.621500
+2024-12-24 17:31:53,116 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/url {'url': 'https://www.pandaremit.com/en/aus/china/aud-cny-converter'}
+2024-12-24 17:31:53,117 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,117 - DEBUG - cbaThread - Remote response: status=200 | data={"value":"0.8815"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,117 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,117 - INFO - cbaThread - Captured SGD_sell: 0.8815
+2024-12-24 17:31:53,117 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/element {'using': 'xpath', 'value': '//div[@data-category="HKD"]//span[text()="Send IMT"]/following-sibling::div[1]'}
+2024-12-24 17:31:53,122 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,122 - DEBUG - cbaThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.12"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,122 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,122 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.12'}, 'innerText']}
+2024-12-24 17:31:53,124 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,124 - DEBUG - cbaThread - Remote response: status=200 | data={"value":"4.6386"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,124 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,124 - INFO - cbaThread - Captured HKD_buy: 4.6386
+2024-12-24 17:31:53,124 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/element {'using': 'xpath', 'value': '//div[@data-category="HKD"]//span[text()="Receive IMT"]/following-sibling::div[1]'}
+2024-12-24 17:31:53,132 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,132 - DEBUG - cbaThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.13"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,132 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,132 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.13'}, 'innerText']}
+2024-12-24 17:31:53,134 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,134 - DEBUG - cbaThread - Remote response: status=200 | data={"value":"5.0466"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,134 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,134 - INFO - cbaThread - Captured HKD_sell: 5.0466
+2024-12-24 17:31:53,134 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/element {'using': 'xpath', 'value': '//div[@data-category="EUR"]//span[text()="Send IMT"]/following-sibling::div[1]'}
+2024-12-24 17:31:53,139 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,139 - DEBUG - cbaThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.14"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,139 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,139 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.14'}, 'innerText']}
+2024-12-24 17:31:53,141 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,142 - DEBUG - cbaThread - Remote response: status=200 | data={"value":"0.5746"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,142 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,142 - INFO - cbaThread - Captured EUR_buy: 0.5746
+2024-12-24 17:31:53,142 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/element {'using': 'xpath', 'value': '//div[@data-category="EUR"]//span[text()="Receive IMT"]/following-sibling::div[1]'}
+2024-12-24 17:31:53,148 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,148 - DEBUG - cbaThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.15"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,148 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,148 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.15'}, 'innerText']}
+2024-12-24 17:31:53,151 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,151 - DEBUG - cbaThread - Remote response: status=200 | data={"value":"0.6239"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,151 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,151 - INFO - cbaThread - Captured EUR_sell: 0.6239
+2024-12-24 17:31:53,151 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/element {'using': 'xpath', 'value': '//div[@data-category="GBP"]//span[text()="Send IMT"]/following-sibling::div[1]'}
+2024-12-24 17:31:53,156 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,156 - DEBUG - cbaThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.16"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,156 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,156 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.16'}, 'innerText']}
+2024-12-24 17:31:53,159 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,159 - DEBUG - cbaThread - Remote response: status=200 | data={"value":"0.4769"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,159 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,159 - INFO - cbaThread - Captured GBP_buy: 0.4769
+2024-12-24 17:31:53,159 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/element {'using': 'xpath', 'value': '//div[@data-category="GBP"]//span[text()="Receive IMT"]/following-sibling::div[1]'}
+2024-12-24 17:31:53,163 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,164 - DEBUG - cbaThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.17"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,164 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,164 - DEBUG - cbaThread - POST http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.D284CDB9465ECBACB59FEF8546B667AF.d.0E7096A4D5FF084D6D61302CD11460A1.e.17'}, 'innerText']}
+2024-12-24 17:31:53,166 - DEBUG - cbaThread - http://localhost:63955 "POST /session/1418685bb450a3b54f1d5fa8ec1d2c7f/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,166 - DEBUG - cbaThread - Remote response: status=200 | data={"value":"0.5178"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,166 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,166 - INFO - cbaThread - Captured GBP_sell: 0.5178
+2024-12-24 17:31:53,166 - DEBUG - cbaThread - DELETE http://localhost:63955/session/1418685bb450a3b54f1d5fa8ec1d2c7f {}
+2024-12-24 17:31:53,221 - DEBUG - cbaThread - http://localhost:63955 "DELETE /session/1418685bb450a3b54f1d5fa8ec1d2c7f HTTP/1.1" 200 0
+2024-12-24 17:31:53,221 - DEBUG - cbaThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,221 - DEBUG - cbaThread - Finished Request
+2024-12-24 17:31:53,626 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/url HTTP/1.1" 200 0
+2024-12-24 17:31:53,626 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,626 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,626 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/element {'using': 'xpath', 'value': '//div[h3/strong[contains(text(), "实时汇率")]]/following-sibling::div//td[contains(text(), "澳元/日币")]/fol...'}
+2024-12-24 17:31:53,853 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,853 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.34"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,853 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,853 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.34'}, 'innerText']}
+2024-12-24 17:31:53,857 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,857 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":"96.9214"} | headers=HTTPHeaderDict({'Content-Length': '19', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,857 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,857 - INFO - moneychainThread - Captured JPY_buy: 96.9214
+2024-12-24 17:31:53,857 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/element {'using': 'xpath', 'value': '//div[h3/strong[contains(text(), "实时汇率")]]/following-sibling::div//td[contains(text(), "澳元/日币")]/fol...'}
+2024-12-24 17:31:53,862 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,863 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.35"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,863 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,863 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.35'}, 'innerText']}
+2024-12-24 17:31:53,865 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,865 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":"99.6214"} | headers=HTTPHeaderDict({'Content-Length': '19', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,865 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,865 - INFO - moneychainThread - Captured JPY_sell: 99.6214
+2024-12-24 17:31:53,865 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/element {'using': 'xpath', 'value': '//div[h3/strong[contains(text(), "实时汇率")]]/following-sibling::div//td[contains(text(), "澳元/美金")]/fol...'}
+2024-12-24 17:31:53,871 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,871 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.36"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,871 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,871 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.36'}, 'innerText']}
+2024-12-24 17:31:53,875 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,875 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":"0.6171"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,875 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,875 - INFO - moneychainThread - Captured USD_buy: 0.6171
+2024-12-24 17:31:53,875 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/element {'using': 'xpath', 'value': '//div[h3/strong[contains(text(), "实时汇率")]]/following-sibling::div//td[contains(text(), "澳元/美金")]/fol...'}
+2024-12-24 17:31:53,881 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,881 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.37"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,881 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,881 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.37'}, 'innerText']}
+2024-12-24 17:31:53,883 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,883 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":"0.6311"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,883 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,883 - INFO - moneychainThread - Captured USD_sell: 0.6311
+2024-12-24 17:31:53,883 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/element {'using': 'xpath', 'value': '//div[h3/strong[contains(text(), "实时汇率")]]/following-sibling::div//td[contains(text(), "澳元/人民币")]/fo...'}
+2024-12-24 17:31:53,888 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,888 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.38"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,891 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,891 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.38'}, 'innerText']}
+2024-12-24 17:31:53,893 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,894 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":"4.5497"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,894 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,894 - INFO - moneychainThread - Captured CNY_buy: 4.5497
+2024-12-24 17:31:53,894 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/element {'using': 'xpath', 'value': '//div[h3/strong[contains(text(), "实时汇率")]]/following-sibling::div//td[contains(text(), "澳元/人民币")]/fo...'}
+2024-12-24 17:31:53,899 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,901 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.39"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,901 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,901 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.39'}, 'innerText']}
+2024-12-24 17:31:53,904 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,904 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":"4.7197"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,904 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,904 - INFO - moneychainThread - Captured CNY_sell: 4.7197
+2024-12-24 17:31:53,904 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/element {'using': 'xpath', 'value': '//div[h3/strong[contains(text(), "实时汇率")]]/following-sibling::div//td[contains(text(), "澳元/新币")]/fol...'}
+2024-12-24 17:31:53,909 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,910 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.40"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,910 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,910 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.40'}, 'innerText']}
+2024-12-24 17:31:53,912 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,913 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":"0.8424"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,913 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,913 - INFO - moneychainThread - Captured SGD_buy: 0.8424
+2024-12-24 17:31:53,913 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/element {'using': 'xpath', 'value': '//div[h3/strong[contains(text(), "实时汇率")]]/following-sibling::div//td[contains(text(), "澳元/新币")]/fol...'}
+2024-12-24 17:31:53,919 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,920 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.41"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,920 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,920 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.41'}, 'innerText']}
+2024-12-24 17:31:53,923 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,925 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":"0.8579"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,926 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,927 - INFO - moneychainThread - Captured SGD_sell: 0.8579
+2024-12-24 17:31:53,928 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/element {'using': 'xpath', 'value': '//div[h3/strong[contains(text(), "实时汇率")]]/following-sibling::div//td[contains(text(), "澳元/港币")]/fol...'}
+2024-12-24 17:31:53,933 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,935 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.42"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,935 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,935 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.42'}, 'innerText']}
+2024-12-24 17:31:53,938 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,939 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":"4.7960"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,939 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,939 - INFO - moneychainThread - Captured HKD_buy: 4.7960
+2024-12-24 17:31:53,939 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/element {'using': 'xpath', 'value': '//div[h3/strong[contains(text(), "实时汇率")]]/following-sibling::div//td[contains(text(), "澳元/港币")]/fol...'}
+2024-12-24 17:31:53,943 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,943 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.43"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,943 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,943 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.43'}, 'innerText']}
+2024-12-24 17:31:53,945 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,945 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":"4.9060"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,945 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,945 - INFO - moneychainThread - Captured HKD_sell: 4.9060
+2024-12-24 17:31:53,946 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/element {'using': 'xpath', 'value': '//div[h3/strong[contains(text(), "实时汇率")]]/following-sibling::div//td[contains(text(), "澳元/欧元")]/fol...'}
+2024-12-24 17:31:53,951 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,951 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.44"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,951 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,951 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.44'}, 'innerText']}
+2024-12-24 17:31:53,953 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,953 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":"0.5942"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,953 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,953 - INFO - moneychainThread - Captured EUR_buy: 0.5942
+2024-12-24 17:31:53,953 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/element {'using': 'xpath', 'value': '//div[h3/strong[contains(text(), "实时汇率")]]/following-sibling::div//td[contains(text(), "澳元/欧元")]/fol...'}
+2024-12-24 17:31:53,958 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,958 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.45"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,958 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,958 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.45'}, 'innerText']}
+2024-12-24 17:31:53,960 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,960 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":"0.6202"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,960 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,960 - INFO - moneychainThread - Captured EUR_sell: 0.6202
+2024-12-24 17:31:53,960 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/element {'using': 'xpath', 'value': '//div[h3/strong[contains(text(), "实时汇率")]]/following-sibling::div//td[contains(text(), "澳元/英镑")]/fol...'}
+2024-12-24 17:31:53,964 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,964 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.46"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,964 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,964 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.46'}, 'innerText']}
+2024-12-24 17:31:53,967 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,967 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":"0.4878"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,967 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,967 - INFO - moneychainThread - Captured GBP_buy: 0.4878
+2024-12-24 17:31:53,967 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/element {'using': 'xpath', 'value': '//div[h3/strong[contains(text(), "实时汇率")]]/following-sibling::div//td[contains(text(), "澳元/英镑")]/fol...'}
+2024-12-24 17:31:53,972 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/element HTTP/1.1" 200 0
+2024-12-24 17:31:53,972 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.47"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,972 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,972 - DEBUG - moneychainThread - POST http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.5DF51D68E437F809CEE1BD71EFCD490A.d.2D029A9644C946C829268E8789670B8A.e.47'}, 'innerText']}
+2024-12-24 17:31:53,974 - DEBUG - moneychainThread - http://localhost:63961 "POST /session/553cb975030f7da36e0c737c4d27b79b/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:53,974 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":"0.5128"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:53,974 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:53,974 - INFO - moneychainThread - Captured GBP_sell: 0.5128
+2024-12-24 17:31:53,974 - DEBUG - moneychainThread - DELETE http://localhost:63961/session/553cb975030f7da36e0c737c4d27b79b {}
+2024-12-24 17:31:54,028 - DEBUG - moneychainThread - http://localhost:63961 "DELETE /session/553cb975030f7da36e0c737c4d27b79b HTTP/1.1" 200 0
+2024-12-24 17:31:54,028 - DEBUG - moneychainThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,028 - DEBUG - moneychainThread - Finished Request
+2024-12-24 17:31:54,034 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/url HTTP/1.1" 200 0
+2024-12-24 17:31:54,034 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,034 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,034 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/element {'using': 'xpath', 'value': '//div[@id="rateQuoteDIV"]//tr[td[contains(text(),"澳元/人民币") and img[contains(@src,"australia.png")]]]...'}
+2024-12-24 17:31:54,040 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,040 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.56"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,040 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,040 - DEBUG - moneychaseThread - GET http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/element/f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.56/text {}
+2024-12-24 17:31:54,045 - DEBUG - moneychaseThread - http://localhost:63960 "GET /session/2e007b7fd04d0ae245804ede48be64ee/element/f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.56/text HTTP/1.1" 200 0
+2024-12-24 17:31:54,045 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,045 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,045 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/element {'using': 'xpath', 'value': '//div[@id="rateQuoteDIV"]//tr[td[contains(text(),"澳元/日元")]]/td[@data-th="Ask"]'}
+2024-12-24 17:31:54,050 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,050 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.57"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,050 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,050 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.57'}, 'innerText']}
+2024-12-24 17:31:54,053 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,053 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,053 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,053 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/element {'using': 'xpath', 'value': '//div[@id="rateQuoteDIV"]//tr[td[contains(text(),"澳元/日元")]]/td[@data-th="BID"]'}
+2024-12-24 17:31:54,058 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,058 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.58"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,058 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,058 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.58'}, 'innerText']}
+2024-12-24 17:31:54,061 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,061 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,061 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,061 - INFO - moneychaseThread - Captured JPY_buy: 
+2024-12-24 17:31:54,061 - INFO - moneychaseThread - Captured JPY_sell: 
+2024-12-24 17:31:54,061 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/element {'using': 'xpath', 'value': '//div[@id="rateQuoteDIV"]//tr[td[contains(text(),"澳元/美元")]]/td[@data-th="Ask"]'}
+2024-12-24 17:31:54,066 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,066 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.59"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,066 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,066 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.59'}, 'innerText']}
+2024-12-24 17:31:54,068 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,068 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,068 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,068 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/element {'using': 'xpath', 'value': '//div[@id="rateQuoteDIV"]//tr[td[contains(text(),"澳元/美元")]]/td[@data-th="BID"]'}
+2024-12-24 17:31:54,073 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,073 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.60"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,073 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,073 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.60'}, 'innerText']}
+2024-12-24 17:31:54,075 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,075 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,075 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,075 - INFO - moneychaseThread - Captured USD_buy: 
+2024-12-24 17:31:54,075 - INFO - moneychaseThread - Captured USD_sell: 
+2024-12-24 17:31:54,075 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/element {'using': 'xpath', 'value': '//div[@id="rateQuoteDIV"]//tr[td[contains(text(),"澳元/人民币") and img[contains(@src,"australia.png")]]]...'}
+2024-12-24 17:31:54,078 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,078 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.56"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,078 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,078 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.56'}, 'innerText']}
+2024-12-24 17:31:54,080 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,080 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,080 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,080 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/element {'using': 'xpath', 'value': '//div[@id="rateQuoteDIV"]//tr[td[contains(text(),"澳元/人民币") and img[contains(@src,"australia.png")]]]...'}
+2024-12-24 17:31:54,085 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,086 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.61"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,086 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,086 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.61'}, 'innerText']}
+2024-12-24 17:31:54,088 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,089 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,089 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,089 - INFO - moneychaseThread - Captured CNY_buy: 
+2024-12-24 17:31:54,089 - INFO - moneychaseThread - Captured CNY_sell: 
+2024-12-24 17:31:54,089 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/element {'using': 'xpath', 'value': '//div[@id="rateQuoteDIV"]//tr[td[contains(text(),"澳元/新加坡元")]]/td[@data-th="Ask"]'}
+2024-12-24 17:31:54,093 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,093 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.62"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,093 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,093 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.62'}, 'innerText']}
+2024-12-24 17:31:54,095 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,095 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,095 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,095 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/element {'using': 'xpath', 'value': '//div[@id="rateQuoteDIV"]//tr[td[contains(text(),"澳元/新加坡元")]]/td[@data-th="BID"]'}
+2024-12-24 17:31:54,100 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,100 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.63"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,101 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,101 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.63'}, 'innerText']}
+2024-12-24 17:31:54,103 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,103 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,103 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,103 - INFO - moneychaseThread - Captured SGD_buy: 
+2024-12-24 17:31:54,103 - INFO - moneychaseThread - Captured SGD_sell: 
+2024-12-24 17:31:54,103 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/element {'using': 'xpath', 'value': '//div[@id="rateQuoteDIV"]//tr[td[contains(text(),"澳元/港币")]]/td[@data-th="Ask"]'}
+2024-12-24 17:31:54,108 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,108 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.64"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,108 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,108 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.64'}, 'innerText']}
+2024-12-24 17:31:54,110 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,110 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,110 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,110 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/element {'using': 'xpath', 'value': '//div[@id="rateQuoteDIV"]//tr[td[contains(text(),"澳元/港币")]]/td[@data-th="BID"]'}
+2024-12-24 17:31:54,115 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,116 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.65"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,116 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,116 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.65'}, 'innerText']}
+2024-12-24 17:31:54,119 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,120 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":"4.9770"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,120 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,120 - INFO - moneychaseThread - Captured HKD_buy: 
+2024-12-24 17:31:54,120 - INFO - moneychaseThread - Captured HKD_sell: 4.9770
+2024-12-24 17:31:54,120 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/element {'using': 'xpath', 'value': '//div[@id="rateQuoteDIV"]//tr[td[contains(text(),"澳元/欧元")]]/td[@data-th="Ask"]'}
+2024-12-24 17:31:54,125 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,125 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.66"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,125 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,125 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.66'}, 'innerText']}
+2024-12-24 17:31:54,128 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,128 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":"0.5791"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,128 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,128 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/element {'using': 'xpath', 'value': '//div[@id="rateQuoteDIV"]//tr[td[contains(text(),"澳元/欧元")]]/td[@data-th="BID"]'}
+2024-12-24 17:31:54,133 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,133 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.67"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,133 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,133 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.67'}, 'innerText']}
+2024-12-24 17:31:54,135 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,135 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":"0.6140"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,135 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,135 - INFO - moneychaseThread - Captured EUR_buy: 0.5791
+2024-12-24 17:31:54,135 - INFO - moneychaseThread - Captured EUR_sell: 0.6140
+2024-12-24 17:31:54,135 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/element {'using': 'xpath', 'value': '//div[@id="rateQuoteDIV"]//tr[td[contains(text(),"澳元/英镑")]]/td[@data-th="Ask"]'}
+2024-12-24 17:31:54,141 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,141 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.68"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,141 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,141 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.68'}, 'innerText']}
+2024-12-24 17:31:54,144 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,144 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":"0.4817"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,144 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,144 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/element {'using': 'xpath', 'value': '//div[@id="rateQuoteDIV"]//tr[td[contains(text(),"澳元/英镑")]]/td[@data-th="BID"]'}
+2024-12-24 17:31:54,150 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,150 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.69"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,150 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,150 - DEBUG - moneychaseThread - POST http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.CBF1A7B27B3D4906284818320604961D.d.CFE1188CD3C0D08F5A142E68D4F1E33F.e.69'}, 'innerText']}
+2024-12-24 17:31:54,153 - DEBUG - moneychaseThread - http://localhost:63960 "POST /session/2e007b7fd04d0ae245804ede48be64ee/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,153 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":"0.5187"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,153 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,153 - INFO - moneychaseThread - Captured GBP_buy: 0.4817
+2024-12-24 17:31:54,153 - INFO - moneychaseThread - Captured GBP_sell: 0.5187
+2024-12-24 17:31:54,153 - DEBUG - moneychaseThread - DELETE http://localhost:63960/session/2e007b7fd04d0ae245804ede48be64ee {}
+2024-12-24 17:31:54,207 - DEBUG - moneychaseThread - http://localhost:63960 "DELETE /session/2e007b7fd04d0ae245804ede48be64ee HTTP/1.1" 200 0
+2024-12-24 17:31:54,207 - DEBUG - moneychaseThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,207 - DEBUG - moneychaseThread - Finished Request
+2024-12-24 17:31:54,421 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,421 - DEBUG - anzThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.53"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,421 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,421 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.53'}, 'innerText']}
+2024-12-24 17:31:54,425 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,426 - DEBUG - anzThread - Remote response: status=200 | data={"value":"94.83"} | headers=HTTPHeaderDict({'Content-Length': '17', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,426 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,426 - INFO - anzThread - Captured JPY_buy: 94.83
+2024-12-24 17:31:54,426 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/element {'using': 'xpath', 'value': '//div[@aria-labelledby="tab-2"]//td[@data-code="JPY"]/following-sibling::td[1]'}
+2024-12-24 17:31:54,431 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,431 - DEBUG - anzThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.54"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,431 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,431 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.54'}, 'innerText']}
+2024-12-24 17:31:54,433 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,433 - DEBUG - anzThread - Remote response: status=200 | data={"value":" 101.23"} | headers=HTTPHeaderDict({'Content-Length': '19', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,433 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,434 - INFO - anzThread - Captured JPY_sell:  101.23
+2024-12-24 17:31:54,434 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/element {'using': 'xpath', 'value': '//div[@aria-labelledby="tab-1"]//td[@data-code="USD"]/following-sibling::td[1]'}
+2024-12-24 17:31:54,439 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,439 - DEBUG - anzThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.55"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,439 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,439 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.55'}, 'innerText']}
+2024-12-24 17:31:54,441 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,441 - DEBUG - anzThread - Remote response: status=200 | data={"value":"0.6041"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,441 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,441 - INFO - anzThread - Captured USD_buy: 0.6041
+2024-12-24 17:31:54,441 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/element {'using': 'xpath', 'value': '//div[@aria-labelledby="tab-2"]//td[@data-code="USD"]/following-sibling::td[1]'}
+2024-12-24 17:31:54,446 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,446 - DEBUG - anzThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.56"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,446 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,446 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.56'}, 'innerText']}
+2024-12-24 17:31:54,448 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,449 - DEBUG - anzThread - Remote response: status=200 | data={"value":" 0.6437"} | headers=HTTPHeaderDict({'Content-Length': '19', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,449 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,449 - INFO - anzThread - Captured USD_sell:  0.6437
+2024-12-24 17:31:54,449 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/element {'using': 'xpath', 'value': '//div[@aria-labelledby="tab-1"]//td[@data-code="CNY"]/following-sibling::td[1]'}
+2024-12-24 17:31:54,453 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,453 - DEBUG - anzThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.57"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,453 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,453 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.57'}, 'innerText']}
+2024-12-24 17:31:54,455 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,455 - DEBUG - anzThread - Remote response: status=200 | data={"value":"N/A"} | headers=HTTPHeaderDict({'Content-Length': '15', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,455 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,456 - INFO - anzThread - Captured CNY_buy: N/A
+2024-12-24 17:31:54,456 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/element {'using': 'xpath', 'value': '//div[@aria-labelledby="tab-2"]//td[@data-code="CNY"]/following-sibling::td[1]'}
+2024-12-24 17:31:54,460 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,461 - DEBUG - anzThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.58"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,461 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,461 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.58'}, 'innerText']}
+2024-12-24 17:31:54,463 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,463 - DEBUG - anzThread - Remote response: status=200 | data={"value":"N/A"} | headers=HTTPHeaderDict({'Content-Length': '15', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,463 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,463 - INFO - anzThread - Captured CNY_sell: N/A
+2024-12-24 17:31:54,463 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/element {'using': 'xpath', 'value': '//div[@aria-labelledby="tab-1"]//td[@data-code="SGD"]/following-sibling::td[1]'}
+2024-12-24 17:31:54,467 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,467 - DEBUG - anzThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.59"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,467 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,467 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.59'}, 'innerText']}
+2024-12-24 17:31:54,469 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,469 - DEBUG - anzThread - Remote response: status=200 | data={"value":"0.82"} | headers=HTTPHeaderDict({'Content-Length': '16', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,469 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,469 - INFO - anzThread - Captured SGD_buy: 0.82
+2024-12-24 17:31:54,469 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/element {'using': 'xpath', 'value': '//div[@aria-labelledby="tab-2"]//td[@data-code="SGD"]/following-sibling::td[1]'}
+2024-12-24 17:31:54,474 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,474 - DEBUG - anzThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.60"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,474 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,474 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.60'}, 'innerText']}
+2024-12-24 17:31:54,476 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,476 - DEBUG - anzThread - Remote response: status=200 | data={"value":" 0.876"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,476 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,476 - INFO - anzThread - Captured SGD_sell:  0.876
+2024-12-24 17:31:54,476 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/element {'using': 'xpath', 'value': '//div[@aria-labelledby="tab-1"]//td[@data-code="HKD"]/following-sibling::td[1]'}
+2024-12-24 17:31:54,481 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,481 - DEBUG - anzThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.61"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,481 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,481 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.61'}, 'innerText']}
+2024-12-24 17:31:54,483 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,483 - DEBUG - anzThread - Remote response: status=200 | data={"value":"4.694"} | headers=HTTPHeaderDict({'Content-Length': '17', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,483 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,483 - INFO - anzThread - Captured HKD_buy: 4.694
+2024-12-24 17:31:54,483 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/element {'using': 'xpath', 'value': '//div[@aria-labelledby="tab-2"]//td[@data-code="HKD"]/following-sibling::td[1]'}
+2024-12-24 17:31:54,488 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,488 - DEBUG - anzThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.62"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,488 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,488 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.62'}, 'innerText']}
+2024-12-24 17:31:54,490 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,490 - DEBUG - anzThread - Remote response: status=200 | data={"value":" 5.004"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,490 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,490 - INFO - anzThread - Captured HKD_sell:  5.004
+2024-12-24 17:31:54,490 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/element {'using': 'xpath', 'value': '//div[@aria-labelledby="tab-1"]//td[@data-code="EUR"]/following-sibling::td[1]'}
+2024-12-24 17:31:54,494 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,494 - DEBUG - anzThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.51"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,494 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,494 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.51'}, 'innerText']}
+2024-12-24 17:31:54,496 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,496 - DEBUG - anzThread - Remote response: status=200 | data={"value":"0.5789"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,496 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,496 - INFO - anzThread - Captured EUR_buy: 0.5789
+2024-12-24 17:31:54,496 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/element {'using': 'xpath', 'value': '//div[@aria-labelledby="tab-2"]//td[@data-code="EUR"]/following-sibling::td[1]'}
+2024-12-24 17:31:54,501 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,501 - DEBUG - anzThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.63"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,501 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,501 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.63'}, 'innerText']}
+2024-12-24 17:31:54,503 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,503 - DEBUG - anzThread - Remote response: status=200 | data={"value":" 0.6198"} | headers=HTTPHeaderDict({'Content-Length': '19', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,503 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,503 - INFO - anzThread - Captured EUR_sell:  0.6198
+2024-12-24 17:31:54,503 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/element {'using': 'xpath', 'value': '//div[@aria-labelledby="tab-1"]//td[@data-code="GBP"]/following-sibling::td[1]'}
+2024-12-24 17:31:54,507 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,507 - DEBUG - anzThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.64"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,507 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,507 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.64'}, 'innerText']}
+2024-12-24 17:31:54,510 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,510 - DEBUG - anzThread - Remote response: status=200 | data={"value":"0.4811"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,510 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,510 - INFO - anzThread - Captured GBP_buy: 0.4811
+2024-12-24 17:31:54,510 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/element {'using': 'xpath', 'value': '//div[@aria-labelledby="tab-2"]//td[@data-code="GBP"]/following-sibling::td[1]'}
+2024-12-24 17:31:54,516 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/element HTTP/1.1" 200 0
+2024-12-24 17:31:54,516 - DEBUG - anzThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.65"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,516 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,516 - DEBUG - anzThread - POST http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.A885D346784ECAF6E76A0896C511432A.d.FEF0E1CDDB2A9F084B19DDA3BF23E871.e.65'}, 'innerText']}
+2024-12-24 17:31:54,518 - DEBUG - anzThread - http://localhost:63956 "POST /session/71bfa24f61bc53223342fb5fd09d9497/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:54,518 - DEBUG - anzThread - Remote response: status=200 | data={"value":" 0.5147"} | headers=HTTPHeaderDict({'Content-Length': '19', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,518 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,518 - INFO - anzThread - Captured GBP_sell:  0.5147
+2024-12-24 17:31:54,518 - DEBUG - anzThread - DELETE http://localhost:63956/session/71bfa24f61bc53223342fb5fd09d9497 {}
+2024-12-24 17:31:54,573 - DEBUG - anzThread - http://localhost:63956 "DELETE /session/71bfa24f61bc53223342fb5fd09d9497 HTTP/1.1" 200 0
+2024-12-24 17:31:54,573 - DEBUG - anzThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,573 - DEBUG - anzThread - Finished Request
+2024-12-24 17:31:54,585 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/url HTTP/1.1" 200 0
+2024-12-24 17:31:54,585 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:54,585 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:54,585 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/element {'using': 'xpath', 'value': '//tbody/tr[2]/td[2]'}
+2024-12-24 17:31:56,209 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/url HTTP/1.1" 200 0
+2024-12-24 17:31:56,211 - DEBUG - wiseThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,212 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:31:56,212 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/element {'using': 'xpath', 'value': '//strong[@id="route-rate"]'}
+2024-12-24 17:31:56,219 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/element HTTP/1.1" 200 0
+2024-12-24 17:31:56,219 - DEBUG - wiseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03F81D8E84710BF39FC49A685D1D86C6.d.C35D544CA4EA9B821CAE26AE7C0566B0.e.56"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,219 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:31:56,219 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.03F81D8E84710BF39FC49A685D1D86C6.d.C35D544CA4EA9B821CAE26AE7C0566B0.e.56'}, 'innerText']}
+2024-12-24 17:31:56,222 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:56,222 - DEBUG - wiseThread - Remote response: status=200 | data={"value":"1 AUD = 97.9476 JPY"} | headers=HTTPHeaderDict({'Content-Length': '31', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,222 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:31:56,222 - INFO - wiseThread - Captured AUD_to_JPY_midmarket: 97.9476
+2024-12-24 17:31:56,222 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/url {'url': 'https://wise.com/au/compare/western-union-aud-to-USD'}
+2024-12-24 17:31:56,282 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/element HTTP/1.1" 200 0
+2024-12-24 17:31:56,282 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.EEE4E52ECF59190F31BAF954574DE7CE.d.F27FE8113464217855B0F1DF97F655A6.e.16"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,282 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:56,282 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.EEE4E52ECF59190F31BAF954574DE7CE.d.F27FE8113464217855B0F1DF97F655A6.e.16'}, 'innerHTML']}
+2024-12-24 17:31:56,284 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:56,284 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":"4.5937"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,284 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:56,285 - INFO - pandaremitThread - Captured AUD_to_CNY_midmarket: 4.5937
+2024-12-24 17:31:56,285 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/url {'url': 'https://prod.pandaremit.com/pricing/rate/AUD/SGD'}
+2024-12-24 17:31:56,405 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/url HTTP/1.1" 200 0
+2024-12-24 17:31:56,405 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,405 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:56,405 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/element {'using': 'tag name', 'value': 'pre'}
+2024-12-24 17:31:56,410 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/element HTTP/1.1" 200 0
+2024-12-24 17:31:56,410 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.EEE4E52ECF59190F31BAF954574DE7CE.d.313E2FC740E223F9CBE997BA76E171BC.e.20"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,416 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:56,416 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.EEE4E52ECF59190F31BAF954574DE7CE.d.313E2FC740E223F9CBE997BA76E171BC.e.20'}, 'innerText']}
+2024-12-24 17:31:56,422 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:56,422 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":"{\n  \"code\" : 0,\n  \"model\" : {\n    \"name\" : \"\",\n    \"target\" : \"SGD\",\n    \"code\" : \"AUD\",\n    \"huiIn\" : \"0.841200\",\n    \"huiOut\" : \"0.845400\",\n    \"zheSuan\" : \"0.848007\",\n    \"weight\" : 0,\n    \"pandaRate\" : \"0.845400\",\n    \"promoteThreshold\" : 0,\n    \"compareRate\" : \"+0.34%\"\n  },\n  \"suc\" : true\n}"} | headers=HTTPHeaderDict({'Content-Length': '365', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,422 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:56,422 - INFO - pandaremitThread - Captured AUD_to_SGD_midmarket: 0.845400
+2024-12-24 17:31:56,422 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/url {'url': 'https://prod.pandaremit.com/pricing/rate/AUD/HKD'}
+2024-12-24 17:31:56,535 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/url HTTP/1.1" 200 0
+2024-12-24 17:31:56,535 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,535 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:56,535 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/element {'using': 'tag name', 'value': 'pre'}
+2024-12-24 17:31:56,539 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/element HTTP/1.1" 200 0
+2024-12-24 17:31:56,539 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.EEE4E52ECF59190F31BAF954574DE7CE.d.55454FB74DC001841D010C8906D4A6A7.e.25"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,539 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:56,539 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.EEE4E52ECF59190F31BAF954574DE7CE.d.55454FB74DC001841D010C8906D4A6A7.e.25'}, 'innerText']}
+2024-12-24 17:31:56,541 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:56,541 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":"{\n  \"code\" : 0,\n  \"model\" : {\n    \"name\" : \"\",\n    \"target\" : \"HKD\",\n    \"code\" : \"AUD\",\n    \"huiIn\" : \"4.813200\",\n    \"huiOut\" : \"4.827700\",\n    \"zheSuan\" : \"4.847152\",\n    \"weight\" : 0,\n    \"pandaRate\" : \"4.827700\",\n    \"promoteThreshold\" : 0,\n    \"compareRate\" : \"+0.20%\"\n  },\n  \"suc\" : true\n}"} | headers=HTTPHeaderDict({'Content-Length': '365', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,541 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:56,541 - INFO - pandaremitThread - Captured AUD_to_HKD_midmarket: 4.827700
+2024-12-24 17:31:56,541 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/url {'url': 'https://prod.pandaremit.com/pricing/rate/AUD/EUR'}
+2024-12-24 17:31:56,668 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/url HTTP/1.1" 200 0
+2024-12-24 17:31:56,668 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,668 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:56,668 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/element {'using': 'tag name', 'value': 'pre'}
+2024-12-24 17:31:56,672 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/element HTTP/1.1" 200 0
+2024-12-24 17:31:56,672 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.EEE4E52ECF59190F31BAF954574DE7CE.d.1FE8A3C2C8853D3EE767317CEEC0FD42.e.30"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,672 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:56,672 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.EEE4E52ECF59190F31BAF954574DE7CE.d.1FE8A3C2C8853D3EE767317CEEC0FD42.e.30'}, 'innerText']}
+2024-12-24 17:31:56,675 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:56,675 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":"{\n  \"code\" : 0,\n  \"model\" : {\n    \"name\" : \"\",\n    \"target\" : \"EUR\",\n    \"code\" : \"AUD\",\n    \"huiIn\" : \"0.595800\",\n    \"huiOut\" : \"0.598200\",\n    \"zheSuan\" : \"0.600036\",\n    \"weight\" : 0,\n    \"pandaRate\" : \"0.598200\",\n    \"promoteThreshold\" : 0,\n    \"compareRate\" : \"+0.18%\"\n  },\n  \"suc\" : true\n}"} | headers=HTTPHeaderDict({'Content-Length': '365', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,675 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:56,675 - INFO - pandaremitThread - Captured AUD_to_EUR_midmarket: 0.598200
+2024-12-24 17:31:56,675 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/url {'url': 'https://prod.pandaremit.com/pricing/rate/AUD/GBP'}
+2024-12-24 17:31:56,794 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/url HTTP/1.1" 200 0
+2024-12-24 17:31:56,794 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,794 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:56,794 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/element {'using': 'tag name', 'value': 'pre'}
+2024-12-24 17:31:56,799 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/element HTTP/1.1" 200 0
+2024-12-24 17:31:56,800 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.EEE4E52ECF59190F31BAF954574DE7CE.d.98FCDDBECDAB21264CE5405F386CE64E.e.35"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,800 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:56,800 - DEBUG - pandaremitThread - POST http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.EEE4E52ECF59190F31BAF954574DE7CE.d.98FCDDBECDAB21264CE5405F386CE64E.e.35'}, 'innerText']}
+2024-12-24 17:31:56,805 - DEBUG - pandaremitThread - http://localhost:63959 "POST /session/20d3d41ae238f9a07c35d66d7104e2c9/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:56,805 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":"{\n  \"code\" : 0,\n  \"model\" : {\n    \"name\" : \"\",\n    \"target\" : \"GBP\",\n    \"code\" : \"AUD\",\n    \"huiIn\" : \"0.493800\",\n    \"huiOut\" : \"0.495300\",\n    \"zheSuan\" : \"0.496360\",\n    \"weight\" : 0,\n    \"pandaRate\" : \"0.495300\",\n    \"promoteThreshold\" : 0,\n    \"compareRate\" : \"0.00%\"\n  },\n  \"suc\" : true\n}"} | headers=HTTPHeaderDict({'Content-Length': '364', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,805 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:56,805 - INFO - pandaremitThread - Captured AUD_to_GBP_midmarket: 0.495300
+2024-12-24 17:31:56,805 - DEBUG - pandaremitThread - DELETE http://localhost:63959/session/20d3d41ae238f9a07c35d66d7104e2c9 {}
+2024-12-24 17:31:56,860 - DEBUG - pandaremitThread - http://localhost:63959 "DELETE /session/20d3d41ae238f9a07c35d66d7104e2c9 HTTP/1.1" 200 0
+2024-12-24 17:31:56,860 - DEBUG - pandaremitThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,860 - DEBUG - pandaremitThread - Finished Request
+2024-12-24 17:31:56,891 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/url HTTP/1.1" 200 0
+2024-12-24 17:31:56,891 - DEBUG - wiseThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,891 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:31:56,891 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/element {'using': 'xpath', 'value': '//strong[@id="route-rate"]'}
+2024-12-24 17:31:56,894 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/element HTTP/1.1" 200 0
+2024-12-24 17:31:56,894 - DEBUG - wiseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03F81D8E84710BF39FC49A685D1D86C6.d.9EF06D302021195FD67D904B0EAD9478.e.89"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,894 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:31:56,894 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.03F81D8E84710BF39FC49A685D1D86C6.d.9EF06D302021195FD67D904B0EAD9478.e.89'}, 'innerText']}
+2024-12-24 17:31:56,897 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:56,897 - DEBUG - wiseThread - Remote response: status=200 | data={"value":"1 AUD = 0.623850 USD"} | headers=HTTPHeaderDict({'Content-Length': '32', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:56,897 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:31:56,897 - INFO - wiseThread - Captured AUD_to_USD_midmarket: 0.623850
+2024-12-24 17:31:56,897 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/url {'url': 'https://wise.com/au/compare/western-union-aud-to-CNY'}
+2024-12-24 17:31:57,973 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/url HTTP/1.1" 200 0
+2024-12-24 17:31:57,973 - DEBUG - wiseThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:57,973 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:31:57,973 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/element {'using': 'xpath', 'value': '//strong[@id="route-rate"]'}
+2024-12-24 17:31:57,976 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/element HTTP/1.1" 200 0
+2024-12-24 17:31:57,977 - DEBUG - wiseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03F81D8E84710BF39FC49A685D1D86C6.d.F114F2BF3B3EA0CBF769671727C9E80D.e.118"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:57,977 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:31:57,977 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.03F81D8E84710BF39FC49A685D1D86C6.d.F114F2BF3B3EA0CBF769671727C9E80D.e.118'}, 'innerText']}
+2024-12-24 17:31:57,979 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:57,979 - DEBUG - wiseThread - Remote response: status=200 | data={"value":"1 AUD = 4.55326 CNY"} | headers=HTTPHeaderDict({'Content-Length': '31', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:57,979 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:31:57,979 - INFO - wiseThread - Captured AUD_to_CNY_midmarket: 4.55326
+2024-12-24 17:31:57,979 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/url {'url': 'https://wise.com/au/compare/western-union-aud-to-SGD'}
+2024-12-24 17:31:59,189 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/url HTTP/1.1" 200 0
+2024-12-24 17:31:59,190 - DEBUG - wiseThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:59,190 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:31:59,190 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/element {'using': 'xpath', 'value': '//strong[@id="route-rate"]'}
+2024-12-24 17:31:59,193 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/element HTTP/1.1" 200 0
+2024-12-24 17:31:59,193 - DEBUG - wiseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03F81D8E84710BF39FC49A685D1D86C6.d.E9600659F2AC3B30AA79BCF8237D71B6.e.148"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:59,193 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:31:59,193 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.03F81D8E84710BF39FC49A685D1D86C6.d.E9600659F2AC3B30AA79BCF8237D71B6.e.148'}, 'innerText']}
+2024-12-24 17:31:59,195 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:31:59,195 - DEBUG - wiseThread - Remote response: status=200 | data={"value":"1 AUD = 0.847906 SGD"} | headers=HTTPHeaderDict({'Content-Length': '32', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:31:59,195 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:31:59,195 - INFO - wiseThread - Captured AUD_to_SGD_midmarket: 0.847906
+2024-12-24 17:31:59,195 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/url {'url': 'https://wise.com/au/compare/western-union-aud-to-HKD'}
+2024-12-24 17:32:00,342 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/url HTTP/1.1" 200 0
+2024-12-24 17:32:00,342 - DEBUG - wiseThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:32:00,342 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:32:00,342 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/element {'using': 'xpath', 'value': '//strong[@id="route-rate"]'}
+2024-12-24 17:32:00,346 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/element HTTP/1.1" 200 0
+2024-12-24 17:32:00,346 - DEBUG - wiseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03F81D8E84710BF39FC49A685D1D86C6.d.BF2838909BD6CB8E723CFDCB64805E00.e.177"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:32:00,346 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:32:00,346 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.03F81D8E84710BF39FC49A685D1D86C6.d.BF2838909BD6CB8E723CFDCB64805E00.e.177'}, 'innerText']}
+2024-12-24 17:32:00,348 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:32:00,348 - DEBUG - wiseThread - Remote response: status=200 | data={"value":"1 AUD = 4.84613 HKD"} | headers=HTTPHeaderDict({'Content-Length': '31', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:32:00,348 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:32:00,348 - INFO - wiseThread - Captured AUD_to_HKD_midmarket: 4.84613
+2024-12-24 17:32:00,348 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/url {'url': 'https://wise.com/au/compare/western-union-aud-to-EUR'}
+2024-12-24 17:32:01,418 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/url HTTP/1.1" 200 0
+2024-12-24 17:32:01,419 - DEBUG - wiseThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:32:01,419 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:32:01,419 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/element {'using': 'xpath', 'value': '//strong[@id="route-rate"]'}
+2024-12-24 17:32:01,422 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/element HTTP/1.1" 200 0
+2024-12-24 17:32:01,422 - DEBUG - wiseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03F81D8E84710BF39FC49A685D1D86C6.d.6E26BF2B7DBC2DF9C9D1EC5D8981F4A9.e.209"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:32:01,422 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:32:01,422 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.03F81D8E84710BF39FC49A685D1D86C6.d.6E26BF2B7DBC2DF9C9D1EC5D8981F4A9.e.209'}, 'innerText']}
+2024-12-24 17:32:01,424 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:32:01,424 - DEBUG - wiseThread - Remote response: status=200 | data={"value":"1 AUD = 0.600115 EUR"} | headers=HTTPHeaderDict({'Content-Length': '32', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:32:01,424 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:32:01,425 - INFO - wiseThread - Captured AUD_to_EUR_midmarket: 0.600115
+2024-12-24 17:32:01,425 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/url {'url': 'https://wise.com/au/compare/western-union-aud-to-GBP'}
+2024-12-24 17:32:02,565 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/url HTTP/1.1" 200 0
+2024-12-24 17:32:02,565 - DEBUG - wiseThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:32:02,565 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:32:02,565 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/element {'using': 'xpath', 'value': '//strong[@id="route-rate"]'}
+2024-12-24 17:32:02,569 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/element HTTP/1.1" 200 0
+2024-12-24 17:32:02,569 - DEBUG - wiseThread - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.03F81D8E84710BF39FC49A685D1D86C6.d.6F4E466B8E43977CB792D0717A6245F5.e.238"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:32:02,569 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:32:02,569 - DEBUG - wiseThread - POST http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.03F81D8E84710BF39FC49A685D1D86C6.d.6F4E466B8E43977CB792D0717A6245F5.e.238'}, 'innerText']}
+2024-12-24 17:32:02,571 - DEBUG - wiseThread - http://localhost:63957 "POST /session/d6efc5b7ee6a3fedb46252aa8663ba0c/execute/sync HTTP/1.1" 200 0
+2024-12-24 17:32:02,571 - DEBUG - wiseThread - Remote response: status=200 | data={"value":"1 AUD = 0.497746 GBP"} | headers=HTTPHeaderDict({'Content-Length': '32', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:32:02,572 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:32:02,572 - INFO - wiseThread - Captured AUD_to_GBP_midmarket: 0.497746
+2024-12-24 17:32:02,572 - DEBUG - wiseThread - DELETE http://localhost:63957/session/d6efc5b7ee6a3fedb46252aa8663ba0c {}
+2024-12-24 17:32:02,627 - DEBUG - wiseThread - http://localhost:63957 "DELETE /session/d6efc5b7ee6a3fedb46252aa8663ba0c HTTP/1.1" 200 0
+2024-12-24 17:32:02,627 - DEBUG - wiseThread - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-12-24 17:32:02,627 - DEBUG - wiseThread - Finished Request
+2024-12-24 17:32:02,645 - INFO - MainThread - Started writing result to csv
+2024-12-24 17:32:02,647 - INFO - MainThread - Finished writing result to csv
+2024-12-24 17:32:02,647 - INFO - MainThread - ==========================
+2024-12-24 17:32:02,647 - INFO - MainThread - Program end - Exchange Rate Scraper
+2024-12-24 17:32:02,647 - INFO - MainThread - ==========================

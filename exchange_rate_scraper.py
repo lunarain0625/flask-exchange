@@ -15,6 +15,21 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+# before main
+config = configparser.ConfigParser()
+config_file_path = Path(__file__).with_name('config.ini')
+config.read(config_file_path)
+sys.stdout = open(config['GENERAL']['STDOUT_FILE_PATH'], 'w')
+sys.stderr = open(config['GENERAL']['STDERR_FILE_PATH'], 'w')
+logging.basicConfig(
+    filename=config['GENERAL']['LOG_FILE_PATH'],
+    format='%(asctime)s - %(levelname)s - %(threadName)s - %(message)s',
+    level=logging.INFO
+    # level=logging.DEBUG
+)
+row_list = []
+csv_file_path = config['GENERAL']['CSV_FILE_PATH']
+
 
 def process_cba(driver, source):
     try:
@@ -31,7 +46,7 @@ def process_cba(driver, source):
     for symbol in symbol_list:
         try:
             buy_rate = driver.find_element(
-                By.XPATH, 
+                By.XPATH,
                 f'//div[@data-category="{symbol}"]//span[text()="Send IMT"]/following-sibling::div[1]'
             ).get_attribute('innerText')
             logging.info(f'Captured {symbol}_buy: {buy_rate}')
@@ -47,7 +62,7 @@ def process_cba(driver, source):
             logging.error(f'Failed to access symbol {symbol} in source {source}, skip this symbol')
             continue
     driver.quit()
-        
+
 
 def process_anz(driver, source):
     try:
@@ -91,7 +106,7 @@ def process_wise(driver, source):
             midmarket_rate = driver.find_element(
                 By.XPATH,
                 '//strong[@id="route-rate"]'
-            ).get_attribute('innerText').replace('1 AUD = ','').replace(f' {symbol}','')
+            ).get_attribute('innerText').replace('1 AUD = ', '').replace(f' {symbol}', '')
             logging.info(f'Captured AUD_to_{symbol}_midmarket: {midmarket_rate}')
             row_list.append([capture_time, source, f'AUD_to_{symbol}_midmarket', format_numeric_string(midmarket_rate)])
         except:
@@ -164,9 +179,9 @@ def process_moneychase(driver, source):
         # rates, without this explicit wait the result could be empty sometimes
         WebDriverWait(driver, 10).until(
             EC.text_to_be_present_in_element((
-                    By.XPATH, 
-                    f'//div[@id="rateQuoteDIV"]//tr[td[contains(text(),"澳元/人民币") and img[contains(@src,"australia.png")]]]/td[@data-th="Ask"]'
-                ), '')
+                By.XPATH,
+                f'//div[@id="rateQuoteDIV"]//tr[td[contains(text(),"澳元/人民币") and img[contains(@src,"australia.png")]]]/td[@data-th="Ask"]'
+            ), '')
         )
     except:
         logging.error(f'Failed to acceess source {source}, skip this source')
@@ -177,25 +192,25 @@ def process_moneychase(driver, source):
 
     symbol_list = [
         {
-            'english':'JPY', 'chinese':'澳元/日元'
-        }, 
-        {
-            'english':'USD', 'chinese':'澳元/美元'
+            'english': 'JPY', 'chinese': '澳元/日元'
         },
         {
-            'english':'CNY', 'chinese':'澳元/人民币'
+            'english': 'USD', 'chinese': '澳元/美元'
         },
         {
-            'english':'SGD', 'chinese':'澳元/新加坡元'
+            'english': 'CNY', 'chinese': '澳元/人民币'
         },
         {
-            'english':'HKD', 'chinese':'澳元/港币'
+            'english': 'SGD', 'chinese': '澳元/新加坡元'
         },
         {
-            'english':'EUR', 'chinese':'澳元/欧元'
+            'english': 'HKD', 'chinese': '澳元/港币'
         },
         {
-            'english':'GBP', 'chinese':'澳元/英镑'
+            'english': 'EUR', 'chinese': '澳元/欧元'
+        },
+        {
+            'english': 'GBP', 'chinese': '澳元/英镑'
         }
     ]
     for symbol in symbol_list:
@@ -212,7 +227,7 @@ def process_moneychase(driver, source):
                 ).get_attribute('innerText')
 
                 sell_rate = driver.find_element(
-                    By.XPATH, 
+                    By.XPATH,
                     f'//div[@id="rateQuoteDIV"]//tr[td[contains(text(),"{chinese}") and img[contains(@src,"australia.png")]]]/td[@data-th="BID"]'
                 ).get_attribute('innerText')
             else:
@@ -244,28 +259,28 @@ def process_moneychain(driver, source):
         return
     capture_time = datetime.now()
     capture_time = capture_time.strftime('%Y-%m-%d %H:%M:%S')
-    
+
     symbol_list = [
         {
-            'english':'JPY', 'chinese':'澳元/日币'
-        }, 
-        {
-            'english':'USD', 'chinese':'澳元/美金'
+            'english': 'JPY', 'chinese': '澳元/日币'
         },
         {
-            'english':'CNY', 'chinese':'澳元/人民币'
+            'english': 'USD', 'chinese': '澳元/美金'
         },
         {
-            'english':'SGD', 'chinese':'澳元/新币'
+            'english': 'CNY', 'chinese': '澳元/人民币'
         },
         {
-            'english':'HKD', 'chinese':'澳元/港币'
+            'english': 'SGD', 'chinese': '澳元/新币'
         },
         {
-            'english':'EUR', 'chinese':'澳元/欧元'
+            'english': 'HKD', 'chinese': '澳元/港币'
         },
         {
-            'english':'GBP', 'chinese':'澳元/英镑'
+            'english': 'EUR', 'chinese': '澳元/欧元'
+        },
+        {
+            'english': 'GBP', 'chinese': '澳元/英镑'
         }
     ]
     for symbol in symbol_list:
@@ -359,6 +374,11 @@ def format_numeric_string(numeric_string):
 
 
 def main():
+    logging.info("==========================")
+    logging.info("Program start - Exchange Rate Scraper")
+    logging.info("==========================")
+    create_file_if_not_exist(csv_file_path)
+    # main
     source_list = config['GENERAL']['SOURCE_LIST'].split()
     thread_list = []
     for source in source_list:
@@ -373,25 +393,11 @@ def main():
 
     save_price()
 
-
-if __name__ == '__main__':
-    config = configparser.ConfigParser()
-    config_file_path = Path(__file__).with_name('config.ini')
-    config.read(config_file_path)
-    sys.stdout = open(config['GENERAL']['STDOUT_FILE_PATH'], 'w')
-    sys.stderr = open(config['GENERAL']['STDERR_FILE_PATH'], 'w')
-    logging.basicConfig(
-        filename=config['GENERAL']['LOG_FILE_PATH'],
-        format='%(asctime)s - %(levelname)s - %(threadName)s - %(message)s',
-        level=logging.INFO
-    )
-    logging.info("==========================")
-    logging.info("Program start - Exchange Rate Scraper")
-    logging.info("==========================")
-    row_list = []
-    csv_file_path = config['GENERAL']['CSV_FILE_PATH']
-    create_file_if_not_exist(csv_file_path)
-    main()
+    # after main
     logging.info("==========================")
     logging.info("Program end - Exchange Rate Scraper")
     logging.info("==========================")
+
+
+if __name__ == '__main__':
+    main()

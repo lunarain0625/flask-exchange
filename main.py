@@ -13,6 +13,5 @@ def hello_world():
     print(log_content)
     return 'Hello, World! 888'+log_content
 
-
 if __name__ == '__main__':
     app.run(debug=True)

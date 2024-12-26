@@ -1,3 +1,4 @@
+import platform
 import sys
 import logging
 import configparser
@@ -19,10 +20,10 @@ from selenium.webdriver.support import expected_conditions as EC
 config = configparser.ConfigParser()
 config_file_path = Path(__file__).with_name('config.ini')
 config.read(config_file_path)
-sys.stdout = open(config['GENERAL']['STDOUT_FILE_PATH'], 'w')
-sys.stderr = open(config['GENERAL']['STDERR_FILE_PATH'], 'w')
+# sys.stdout = open(config['GENERAL']['STDOUT_FILE_PATH'], 'w')
+# sys.stderr = open(config['GENERAL']['STDERR_FILE_PATH'], 'w')
 logging.basicConfig(
-    filename=config['GENERAL']['LOG_FILE_PATH'],
+    # filename=config['GENERAL']['LOG_FILE_PATH'],
     format='%(asctime)s - %(levelname)s - %(threadName)s - %(message)s',
     level=logging.INFO
     # level=logging.DEBUG
@@ -324,7 +325,19 @@ def create_driver():
             chrome_options.add_argument('--headless')
 
             chrome_options.add_argument('--no-sandbox')
-            service = Service(executable_path=config['GENERAL']['CHROMEDRIVER_EXECUTABLE_PATH'])
+
+            system_name = platform.system()
+
+            if system_name == "Linux":
+                print("当前系统是 Linux")
+                service = Service(executable_path=config['GENERAL']['CHROMEDRIVER_EXECUTABLE_PATH_LINUX'])
+            elif system_name == "Darwin":
+                print("当前系统是 macOS")
+                service = Service(executable_path=config['GENERAL']['CHROMEDRIVER_EXECUTABLE_PATH_MACOS'])
+            else:
+                print(f"当前系统是 {system_name}")
+                service = Service(executable_path=config['GENERAL']['CHROMEDRIVER_EXECUTABLE_PATH_WINDOWS'])
+
             driver = Chrome(service=service, options=chrome_options)
             driver.implicitly_wait(10)
             break

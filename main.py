@@ -10,8 +10,8 @@ app = Flask(__name__)
 def hello_world():
     exchange_rate_scraper.main()
     log_content = read_log_file('log/exchange_rate_scraper.log')
-    print(log_content)
-    return 'Hello, World! 888'+log_content
+    return 'Hello, World! 888'
+
 
 if __name__ == '__main__':
     app.run(debug=True)

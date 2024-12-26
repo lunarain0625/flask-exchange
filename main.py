@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    exchange_rate_scraper.main()
+    # exchange_rate_scraper.main()
     log_content = read_log_file('log/exchange_rate_scraper.log')
     return 'Hello, World! 888'
 
